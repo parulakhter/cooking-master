@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+}
+body{
+    font-weight: 300px;
+    
+    line-height: 1.6;
+    font-family: 'poppins', sans-serif;
+    background-color: #EDD263;
+}
+/* Menu */
+.menu-container{
+    width: 1100px;
+    max-width: 85%;
+    margin: 0 auto;
+}
+nav{
+    height: 50px;
+    width: 100%;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+}
+nav h3{
+    margin-top: .25rem;
+}
+nav ul{
+    display: flex;
+    justify-content: flex-end;
+    margin: 0 6px;
+}
+nav ul li a{
+    color: black;
+    padding: 10px 15px;
+    display: flex;
+    justify-content: flex-end;
+}
+nav ul li a:hover, a.active{
+    color: whitesmoke;
+    background-color: #3B2D64;
+    border-radius: 5px;
+}
+
+/* End */
+
+/* Meal Search Box */
+
+.container{
+    margin: auto;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.flex{
+    margin-top: 1.5rem;
+    display: flex;
+}
+input, button{
+    border: none;    
+    font-size: 14px;
+    padding: 8px 10px;
+    margin: 0;
+    height: 45px;
+}
+input[type="text"]{
+    width: 350px;
+}
+.search-btn{
+    width: 90px;
+    cursor: pointer;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    background-color: #3B2D64;
+    color: whitesmoke; 
+}
+.search-icon{
+    color: gray;
+    background-color: white;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    padding-left: 15px;   
+}
+.meals{
+    width: 1100px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 5px;
+    margin: 40px 0;
+}
+.meal img{
+    width: 100%;    
+}
+.meal{
+    margin-top: 1rem;
+    cursor: pointer;
+    width: 250px;
+    background-color: white;
+    text-align: center;
+    border-radius: 1rem;
+    overflow: hidden;
+}
+.meal-info{
+    padding: 15px 10px;
+    color: #2C2E2D;    
+}
+.single-meal{
+    width: 600px;
+    margin-top: 2rem;
+    background-color: white;
+    border-radius: .75rem;
+    overflow: hidden;
+    text-align: left;
+}
+.single-meal img{
+    width: 100%;
+}
+.text-align{
+    margin-top: 1rem;
+    padding: 0 0 2rem 2rem;
+}
+.text-align h4{
+    margin:.75rem auto;
+}
+.dark-purple{
+    padding-right: .5rem;
+    color: #3B2D64;
+}
+
